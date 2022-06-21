@@ -7,7 +7,7 @@ function VideoHeader() {
   return (
     <div className='videoHeader'>
       <ArrowBackIosIcon fontSize='medium' />
-      <h2>D-Story</h2>
+      <></>
       <CameraAltIcon fontSize='medium' />
     </div>
   )
