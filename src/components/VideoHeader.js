@@ -6,7 +6,7 @@ import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 function VideoHeader() {
   const onBackClicked = () => {
-    console.log('back clicked')
+    window.location.href = 'https://github.com/deri-kurniawan/dikdok'
   }
 
   const onCameraClicked = () => {
