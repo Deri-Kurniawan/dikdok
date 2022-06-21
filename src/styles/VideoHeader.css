@@ -10,3 +10,7 @@
 .videoHeader > * {
   padding: 20px;
 }
+
+.videoHeader__icon {
+  z-index: 100;
+}
