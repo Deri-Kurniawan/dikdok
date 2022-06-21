@@ -9,10 +9,10 @@ function App() {
     <div className='app'>
       <div className='app__videos'>
         {
-          videos.map(({ id, src }) => (
+          videos.map((video) => (
             <VideoCard
-              key={id}
-              src={src}
+              key={video.id}
+              {...video}
             />
             )
         )}
