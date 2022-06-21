@@ -1,4 +1,5 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 import '../styles/VideoCard.css'
 import VideoHeader from './VideoHeader'
 
@@ -6,13 +7,25 @@ function VideoCard({ src }) {
   const [isPlaying, setIsPlaying] = useState(false)
   const videoRef = useRef(null)
 
+  const { ref, inView } = useInView({
+    threshold: 1,
+  });
+
+  useEffect(() => {
+    if(inView) {
+      videoRef.current.play()
+      setIsPlaying(true)
+    } else {
+      videoRef.current.pause()
+      setIsPlaying(false)
+    }
+  }, [inView])
+
   const onVideoClick = () => {
     if(isPlaying) {
-      // stop video
       videoRef.current.pause()
       setIsPlaying(false)
     } else {
-      // play video
       videoRef.current.play()
       setIsPlaying(true)
     }
@@ -24,10 +37,11 @@ function VideoCard({ src }) {
   }
 
   return (
-    <div className="videoCard">
-      {/* Video Container for snap scrolling */}
+    <div className="videoCard" ref={ref}>
       <VideoHeader />
       <video
+        autoPlay={inView}
+        playsInline
         onTouchMove={onVideoChange}
         onWheel={onVideoChange}
         ref={videoRef}
