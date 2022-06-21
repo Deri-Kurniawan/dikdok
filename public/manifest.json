@@ -3,73 +3,28 @@
   "name": "Dik Dok Video Reels",
   "icons": [
     {
-      "src": "\/dikdok/icons/android-icon-36x36.png",
-      "sizes": "36x36",
-      "type": "image\/png",
-      "density": "0.75"
-    },
-    {
-      "src": "\/dikdok/icons/android-icon-48x48.png",
-      "sizes": "48x48",
-      "type": "image\/png",
-      "density": "1.0"
-    },
-    {
-      "src": "\/dikdok/icons/android-icon-72x72.png",
-      "sizes": "72x72",
-      "type": "image\/png",
-      "density": "1.5"
-    },
-    {
-      "src": "\/dikdok/icons/android-icon-96x96.png",
-      "sizes": "96x96",
-      "type": "image\/png",
-      "density": "2.0"
-    },
-    {
-      "src": "\/dikdok/icons/android-icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image\/png",
-      "density": "4.0"
-    },
-    {
-      "src": "\/dikdok/favicon.ico",
+      "src": "favicon.ico",
       "sizes": "16x16",
-      "type": "image\/x-icon"
+      "type": "image/x-icon"
     },
     {
-      "src": "\/dikdok/icons/favicon-16x16.png",
-      "sizes": "16x16",
-      "type": "image\/x-icon"
-    },
-    {
-      "src": "\/dikdok/icons/favicon-32x32.png",
-      "sizes": "32x32",
-      "type": "image\/x-icon"
-    },
-    {
-      "src": "\/dikdok/icons/favicon-96x96.png",
-      "sizes": "96x96",
-      "type": "image\/x-icon"
-    },
-    {
-      "src": "\/dikdok/icons/icon-192x192.png",
-      "type": "image\/png",
+      "src": "icon-192x192.png",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "\/dikdok/icons/icon-256x256.png",
-      "type": "image\/png",
+      "src": "icon-256x256.png",
+      "type": "image/png",
       "sizes": "256x256"
     },
     {
-      "src": "\/dikdok/icons/icon-384x384.png",
-      "type": "image\/png",
+      "src": "icon-384x384.png",
+      "type": "image/png",
       "sizes": "384x384"
     },
     {
-      "src": "\/dikdok/icons/icon-512x512.png",
-      "type": "image\/png",
+      "src": "icon-512x512.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
