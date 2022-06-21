@@ -5,11 +5,27 @@ import CameraAltIcon from '@mui/icons-material/CameraAlt';
 
 
 function VideoHeader() {
+  const onBackClicked = () => {
+    console.log('back clicked')
+  }
+
+  const onCameraClicked = () => {
+    console.log('camera clicked')
+  }
+
   return (
     <div className='videoHeader'>
-      <ArrowBackIosIcon fontSize='medium' />
+      <ArrowBackIosIcon
+        onClick={onBackClicked}
+        className='videoHeader__icon'
+        fontSize='medium'
+        />
       <></>
-      <CameraAltIcon fontSize='medium' />
+      <CameraAltIcon
+        onClick={onCameraClicked}
+        className='videoHeader__icon'
+        fontSize='medium'
+        />
     </div>
   )
 }
