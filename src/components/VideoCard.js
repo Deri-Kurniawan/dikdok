@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { useInView } from 'react-intersection-observer'
 import '../styles/VideoCard.css'
+import { useInView } from 'react-intersection-observer'
 import VideoHeader from './VideoHeader'
 
 function VideoCard({ src }) {
@@ -38,7 +38,7 @@ function VideoCard({ src }) {
   }
 
   return (
-    <div className="videoCard" ref={ref}>
+    <div className='videoCard' ref={ref}>
       <VideoHeader />
       <video
         autoPlay={inView}
@@ -47,7 +47,7 @@ function VideoCard({ src }) {
         onWheel={onVideoChange}
         ref={videoRef}
         onClick={onVideoClick}
-        className="videoCard__player"
+        className='videoCard__player'
         src={src}
         loop
       >
