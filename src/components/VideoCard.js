@@ -13,6 +13,7 @@ function VideoCard({ src }) {
 
   useEffect(() => {
     if(inView) {
+      videoRef.current.currentTime = 0
       videoRef.current.play()
       setIsPlaying(true)
     } else {
