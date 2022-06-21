@@ -1,0 +1,9 @@
+.videoCard {
+  position: relative;
+  line-height: 0;
+  scroll-snap-align: start;
+}
+
+.videoCard__player {
+  height: 100vh;
+}

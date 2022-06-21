@@ -1,0 +1,36 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body::-webkit-scrollbar,
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
+
+.app {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.app__videos {
+  scroll-snap-type: y mandatory;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .app__videos {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+}
