@@ -10,7 +10,7 @@ function VideoHeader() {
   }
 
   const onCameraClicked = () => {
-    console.log('camera clicked')
+    alert('Camera feature is coming soon!')
   }
 
   return (

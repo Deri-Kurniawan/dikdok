@@ -8,11 +8,11 @@ import { INDONESIAN_SYMBOL } from '../utils/abbreviateNumberSymbol';
 
 function VideoAside({ likes = 0, comments = 0, shares = 0 }) {
   const onLikeClicked = () => {
-    console.log('like clicked')
+    alert('Liking feature is coming soon!')
   }
   
   const onCommentClicked = () => {
-    console.log('comment clicked')
+    alert('Comment feature is coming soon!')
   }
   
   const onShareClicked = () => {
