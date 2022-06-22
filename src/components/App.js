@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/App.css' 
 import VideoCard from './VideoCard'
-import getVideos from '../videos'
+import getVideos from '../utils/index'
 
 function App() {
   const videos = getVideos()

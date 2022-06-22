@@ -1,0 +1,45 @@
+.videoFooter {
+  position: absolute;
+  left: 1vw;
+}
+
+.videoFooter__channel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 20vh;
+  color: white;
+}
+
+.videoFooter__channel-avatar {
+  display: block;
+  margin-right: .4em;
+  width: 2em;
+  height: 2em;
+}
+
+.videoFooter__channel-name {
+  font-size: 1.5em;
+}
+
+.videoFooter__song {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 15vh;
+  color: white;
+  width: 20vw;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .videoFooter__channel, .videoFooter__song {
+    left: 4vw;
+  }
+
+  .videoFooter__song {
+    width: 70vw;
+  }
+}

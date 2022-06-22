@@ -3,8 +3,17 @@ import '../styles/VideoCard.css'
 import { useInView } from 'react-intersection-observer'
 import VideoHeader from './VideoHeader'
 import VideoAside from './VideoAside'
+import VideoFooter from './VideoFooter'
 
-function VideoCard({ src, likes, comments, shares }) {
+function VideoCard({
+  avatarSrc,
+  channel,
+  videoSrc,
+  song,
+  likes,
+  comments,
+  shares
+  }) {
   const [isPlaying, setIsPlaying] = useState(false)
   const videoRef = useRef(null)
 
@@ -49,11 +58,12 @@ function VideoCard({ src, likes, comments, shares }) {
         ref={videoRef}
         onClick={onVideoClick}
         className='videoCard__player'
-        src={src}
+        src={videoSrc}
         loop
       >
       </video>
-      <VideoAside src={src} likes={likes} comments={comments} shares={shares} />
+      <VideoAside likes={likes} comments={comments} shares={shares} />
+      <VideoFooter avatarSrc={avatarSrc} song={song} channel={channel} />
     </div>
   )
 }
