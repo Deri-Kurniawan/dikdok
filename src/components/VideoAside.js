@@ -1,0 +1,49 @@
+import React from 'react'
+import '../styles/VideoAside.css'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import CommentIcon from '@mui/icons-material/Comment';
+import ShareIcon from '@mui/icons-material/Share';
+import abbreviateNumber from '../utils/abbreviateNumber';
+import { INDONESIAN_SYMBOL } from '../utils/abbreviateNumberSymbol';
+
+function VideoAside({ likes = 0, comments = 0, shares = 0 }) {
+  const onLikeClicked = () => {
+    console.log('like clicked')
+  }
+  
+  const onCommentClicked = () => {
+    console.log('comment clicked')
+  }
+  
+  const onShareClicked = () => {
+    console.log('share clicked')
+  }
+
+  return (
+    <div className='videoAside'>
+        <div className='videoAside__action'>
+          <FavoriteIcon
+            className='videoAside__action__icon'
+            onClick={onLikeClicked}
+            />
+          <span className='videoAside__action__stat'>{abbreviateNumber(likes, INDONESIAN_SYMBOL)}</span>
+        </div>
+        <div className='videoAside__action'>
+          <CommentIcon
+            className='videoAside__action__icon'
+            onClick={onCommentClicked}
+            />
+          <span className='videoAside__action__stat'>{abbreviateNumber(comments, INDONESIAN_SYMBOL)}</span>
+        </div>
+        <div className='videoAside__action'>
+          <ShareIcon
+            className='videoAside__action__icon'
+            onClick={onShareClicked}
+            />
+          <span className='videoAside__action__stat'>{abbreviateNumber(shares, INDONESIAN_SYMBOL)}</span>
+        </div>
+    </div>
+  )
+}
+
+export default VideoAside

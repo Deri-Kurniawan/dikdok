@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from 'react'
 import '../styles/VideoCard.css'
 import { useInView } from 'react-intersection-observer'
 import VideoHeader from './VideoHeader'
+import VideoAside from './VideoAside'
 
-function VideoCard({ src }) {
+function VideoCard({ src, likes, comments, shares }) {
   const [isPlaying, setIsPlaying] = useState(false)
   const videoRef = useRef(null)
 
@@ -52,6 +53,7 @@ function VideoCard({ src }) {
         loop
       >
       </video>
+      <VideoAside likes={likes} comments={comments} shares={shares} />
     </div>
   )
 }
