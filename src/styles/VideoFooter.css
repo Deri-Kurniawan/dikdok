@@ -7,7 +7,7 @@
   position: absolute;
   display: flex;
   align-items: center;
-  bottom: 20vh;
+  bottom: 9vh;
   color: white;
 }
 
@@ -26,20 +26,25 @@
   position: absolute;
   display: flex;
   align-items: center;
-  bottom: 15vh;
+  bottom: 3vh;
   color: white;
-  width: 20vw;
+  width: 24vw;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
+  .videoFooter__channel {
+    bottom: 15vh;
+  }
+
   .videoFooter__channel, .videoFooter__song {
     left: 4vw;
   }
 
   .videoFooter__song {
-    width: 70vw;
+    width: 86vw;
+    bottom: 10vh;
   }
 }
