@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/VideoAside.css'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import CommentIcon from '@mui/icons-material/Comment';
@@ -7,8 +7,10 @@ import abbreviateNumber from '../utils/abbreviateNumber';
 import { INDONESIAN_SYMBOL } from '../utils/abbreviateNumberSymbol';
 
 function VideoAside({ likes = 0, comments = 0, shares = 0 }) {
+  const [isLiked, setIsLiked] = useState(false)
+
   const onLikeClicked = () => {
-    alert('Liking feature is coming soon!')
+    setIsLiked(!isLiked)
   }
   
   const onCommentClicked = () => {
@@ -27,6 +29,7 @@ function VideoAside({ likes = 0, comments = 0, shares = 0 }) {
     <div className='videoAside'>
         <div className='videoAside__action'>
           <FavoriteIcon
+            style={{ color: isLiked ? 'red' : 'white' }}
             className='videoAside__action__icon'
             onClick={onLikeClicked}
             />
