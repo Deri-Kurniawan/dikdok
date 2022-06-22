@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/VideoHeader.css'
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+// import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import CameraAltIcon from '@mui/icons-material/CameraAlt';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 function VideoHeader() {
   const onBackClicked = () => {
@@ -15,7 +15,7 @@ function VideoHeader() {
 
   return (
     <div className='videoHeader'>
-      <ArrowBackIosIcon
+      <GitHubIcon
         onClick={onBackClicked}
         className='videoHeader__icon'
         fontSize='medium'
