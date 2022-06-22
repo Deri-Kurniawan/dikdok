@@ -53,7 +53,7 @@ function VideoCard({ src, likes, comments, shares }) {
         loop
       >
       </video>
-      <VideoAside likes={likes} comments={comments} shares={shares} />
+      <VideoAside src={src} likes={likes} comments={comments} shares={shares} />
     </div>
   )
 }

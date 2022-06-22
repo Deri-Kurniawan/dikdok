@@ -16,7 +16,11 @@ function VideoAside({ likes = 0, comments = 0, shares = 0 }) {
   }
   
   const onShareClicked = () => {
-    console.log('share clicked')
+    navigator.share({
+      url: 'https://dikdok.vercel.app',
+      text: 'Dik Dok Video Reels App Created By Deri Kurniawan',
+      title: 'Dik Dok',
+    })
   }
 
   return (
