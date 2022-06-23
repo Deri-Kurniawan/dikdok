@@ -7,9 +7,7 @@ function VideoFooter({ avatarSrc, channel, song }) {
   return (
     <div className='videoFooter'>
       <div className='videoFooter__channel'>
-        {/* avatar */}
         <Avatar className='videoFooter__channel-avatar' alt={avatarSrc} src={avatarSrc}/>
-        {/* channel name */}
         <h3 className='videoFooter__channel-name'>@{channel}</h3>
       </div>
       <div className="videoFooter__song">
