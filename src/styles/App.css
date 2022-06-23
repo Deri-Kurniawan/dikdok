@@ -13,6 +13,38 @@ body::-webkit-scrollbar,
   height: 100vh;
 }
 
+.app__loader {
+  display: grid;
+  place-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  font-size: 3em;
+  font-weight: bolder;
+  background: none;
+  z-index: 500;
+  animation: loader 1s infinite;
+  -webkit-animation: loader 1s infinite;
+}
+
+@keyframes loader {
+  0% {
+    color:rgb(22, 33, 43);
+  }
+  25% {
+    color: aqua;
+  }
+  50% {
+    color:rgb(0, 132, 255);
+  }
+  75% {
+    color: aqua;
+  }
+  100%{
+    color:rgb(22, 33, 43);
+  }
+}
+
 .app__videos {
   scroll-snap-type: y mandatory;
   position: relative;

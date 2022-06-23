@@ -1,0 +1,1 @@
+export const mockAPIPrefix = (endpoint) => `https://62b2de304f851f87f44eac8d.mockapi.io/${endpoint}`;
