@@ -1,6 +1,6 @@
 .videoFooter {
   position: absolute;
-  left: 1vw;
+  left: 1.4vw;
 }
 
 .videoFooter__channel {
@@ -28,7 +28,7 @@
   align-items: center;
   bottom: 3vh;
   color: white;
-  width: 24vw;
+  width: 23.5vw;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
